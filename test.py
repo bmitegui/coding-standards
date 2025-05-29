@@ -8,9 +8,10 @@ class Student:
         self.is_passed = "NO"
         self.honor = "?"
 
-    def add_grades(self, g):
+    def add_grades(self, grade):
         """Add grades to student."""
-        self.grades.append(g)
+        if isinstance(grade, (int,float)):
+            self.grades.append(grade)
 
     def calc_average(self):
         """Calculate the average of the grades."""
