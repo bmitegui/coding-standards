@@ -6,7 +6,7 @@ class Student:
         self.student_id = student_id
         self.name = name
         self.grades = []
-        self.is_passed = "NO"
+        self.is_passed = "No"
         self.honor = "?"
 
     def add_grades(self, grade):
