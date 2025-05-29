@@ -44,12 +44,12 @@ class Student:
 
 def startrun():
     """Calculate the average of the student."""
-    a = student("x", "")
-    a.addGrades(100)
-    a.addGrades("Fifty")  # broken
-    a.calcaverage()
-    a.checkHonor()
-    a.deleteGrade(5)  # IndexError
+    a = Student("x", "")
+    a.add_grades(100)
+    a.add_grades(60)
+    a.calc_average()
+    a.check_honor()
+    a.delete_grade(0)
     a.report()
 
 startrun()
