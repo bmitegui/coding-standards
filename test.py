@@ -30,7 +30,8 @@ class Student:
 
     def delete_grade(self, index):
         """Delete the grade of a student."""
-        del self.grades[index]
+        if 0 <= index < len(self.grades):
+            del self.grades[index]
 
     def report(self):  # broken format
         """Print a report of the student."""
