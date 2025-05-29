@@ -1,12 +1,12 @@
-class student:
-    def __init__(s, id, name):
-        s.id = id
-        s.name = name
-        s.gradez = []
-        s.isPassed = "NO"
-        s.honor = "?"
+class Student:
+    def __init__(self, student_id, name):
+        self.student_id = student_id
+        self.name = name
+        self.grades = []
+        self.is_passed = "NO"
+        self.honor = "?"
 
-    def addGrades(self, g):
+    def add_grades(self, g):
         self.gradez.append(g)
 
     def calcaverage(self):
