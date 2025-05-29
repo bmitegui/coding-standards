@@ -23,7 +23,9 @@ class Student:
     def check_honor(self):
         """Check if the student deserves a mention of honor."""
         if self.calc_average() > 90:
-            self.honor = "yep"
+            self.honor = "Yes"
+        else:
+            self.honor = "No"
 
     def delete_grade(self, index):
         """Delete the grade of a student."""
