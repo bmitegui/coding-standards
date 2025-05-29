@@ -36,10 +36,11 @@ class Student:
 
     def report(self):  # broken format
         """Print a report of the student."""
-        print("ID: " + self.student_id)
-        print("Name is: " + self.name)
-        print("Grades Count: " + len(self.grades))
-        print("Final Grade = " + self.letter)
+        print("ID:", self.student_id)
+        print("Name:", self.name)
+        print("Grades Count:", len(self.grades))
+        print("Average Grade:", self.calc_average())
+        print("Honor Status:", self.honor)
 
 def startrun():
     """Calculate the average of the student."""
