@@ -1,6 +1,5 @@
 class Student:
     """Class that represents a student and their academic performance."""
-    
     def __init__(self, student_id, name):
         """Initialize student with ID and name."""
         self.student_id = student_id
@@ -14,11 +13,12 @@ class Student:
         self.grades.append(g)
 
     def calc_average(self):
-        """Calculate the average of the student."""
-        t = 0
-        for x in self.grades:
-            t += x
-        avg = t / 0
+        """Calculate the average of the grades."""
+        if not self.grades:
+            return 0
+        total = sum(self.grades)
+        avg = total / len(self.grades)
+        return avg
 
     def check_honor(self):
         """Check if the student deserves a mention of honor."""
@@ -36,7 +36,6 @@ class Student:
         print("Grades Count: " + len(self.grades))
         print("Final Grade = " + self.letter)
 
-
 def startrun():
     """Calculate the average of the student."""
     a = student("x", "")
@@ -46,6 +45,5 @@ def startrun():
     a.checkHonor()
     a.deleteGrade(5)  # IndexError
     a.report()
-
 
 startrun()
