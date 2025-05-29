@@ -1,3 +1,4 @@
+""" Initialize the class"""
 class Student:
     """Class that represents a student and their academic performance."""
     def __init__(self, student_id, name):
